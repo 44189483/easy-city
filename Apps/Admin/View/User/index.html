@@ -1,0 +1,98 @@
+<include file="Public/Admin/head.html" />
+    
+    <include file="Public/Admin/menu.html" />
+        
+    <div class="centercontent tables">
+    
+        <div id="contentwrapper" class="contentwrapper">
+                
+            <div class="contenttitle2">
+            	<h3>用户管理</h3>
+            </div><!--contenttitle-->
+            
+            <div class="tableoptions">
+                <form method="GET" action="">
+                    <label><input type="text" name="phone" id="phone" placeholder="手机号码" value="{{$phone}}" /></label> 
+                    &nbsp;
+                    <button type="submit">查询</button>
+                </form>
+            </div>
+
+            <!--tableoptions-->	
+
+            <form name="form" id="form" method="POST" action="__URL__/del">
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablecb" id="tab">
+                    <colgroup>
+                        <col class="con0" style="width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" align="center">
+                                <input type="checkbox" class="checkall" />
+                            </th>
+                            <th class="head0">序号</th>
+                            <th class="head1">手机</th>
+                            <th class="head0">车牌</th>
+                            <th class="head1">品牌</th>
+                            <th class="head0">性别</th>
+                            <th class="head1">出生</th>
+                            <th class="head0">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <notempty name="rows">
+                        <volist id="i" name="rows" key="k">
+                        <tr>
+                            <td align="center">
+                                <input type="checkbox" name="id[]" value="{{$i.userId}}" />
+                            </td>
+                            <td>
+                                <eq name="p" value="">
+                                {{$k}}
+                                <else/>
+                                {{$length*($p-1)+$k}}
+                                </eq>
+                            </td>
+                            <td>{{$i.userPhone}}</td>
+                            <td>{{$i.carCode}}</td>
+                            <td>{{$i.carBand}}</td>
+                            <td>
+                                <eq name="i.userSex" value="1">
+                                男
+                                <else/>
+                                女
+                                </eq>
+                            </td>
+                            <td>{{$i.userBirth}}</td>
+                            <td class="center">
+                                <a href="__URL__/record/phone/{{$i.userPhone}}">消费流水</a> / <a href="__URL__/del/id/{{$i.userId}}" onclick="return confirm('删除后会将现有的消费记录一并删除,确定要删除吗?')">删除</a></td>
+                        </tr>
+                        </volist>
+                    <else/>
+                        <tr><td colspan="8" align="center">暂无信息...</td></tr>
+                    </notempty>
+                    </tbody>
+                </table>
+
+                <div class="dataTables_paginate paging_full_numbers" id="dyntable_paginate">
+                    <button type="button" class="deletebutton">删除选中</button>
+                    {{$page}}
+                </div>
+            </form>
+        
+        </div><!--contentwrapper-->
+        
+	</div><!-- centercontent -->
+    
+    
+</div><!--bodywrapper-->
+
+</body>
+</html>

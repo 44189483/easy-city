@@ -1,0 +1,448 @@
+[ 2017-07-18T10:33:47+08:00 ] ::1 /easy-city/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036194s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0155s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-07-18T10:33:50+08:00 ] ::1 /easy-city/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000398s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002991s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0052s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000605s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003821s ]
+
+[ 2017-07-18T10:33:50+08:00 ] ::1 /easy-city/index.php/Admin/Index/provenum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000320s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004745s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0064s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005550s ]
+
+[ 2017-07-18T10:34:01+08:00 ] ::1 /easy-city/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002586s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0044s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `adela_option` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `adela_option` WHERE ( optionType='AdminCtrol' AND optionKey='admin' AND optionValue='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000930s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002942s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002956s ]
+
+[ 2017-07-18T10:34:02+08:00 ] ::1 /easy-city/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0046s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000766s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003478s ]
+
+[ 2017-07-18T10:34:06+08:00 ] ::1 /easy-city/index.php/Admin/Machine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002782s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0050s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\easy-city\Apps\Admin\Controller\MachineController.class.php 第 39 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_device` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\easy-city\Apps\Admin\Controller\MachineController.class.php 第 58 行.
+SQL: SELECT * FROM `adela_device` ORDER BY deviceId DESC LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000641s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004377s ]
+
+[ 2017-07-18T10:34:08+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0075s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002057s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004742s ]
+
+[ 2017-07-18T10:38:10+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005836s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0184s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000707s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002222s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005172s ]
+
+[ 2017-07-18T10:39:07+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003540s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0194s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000649s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002060s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004609s ]
+
+[ 2017-07-18T10:43:47+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005060s ]
+
+[ 2017-07-18T10:43:50+08:00 ] ::1 /easy-city/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003278s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0366s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000596s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001947s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002743s ]
+
+[ 2017-07-18T10:43:51+08:00 ] ::1 /easy-city/index.php/Admin/Index/provenum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004389s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0055s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004681s ]
+
+[ 2017-07-18T10:44:10+08:00 ] ::1 /easy-city/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004651s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0059s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `adela_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `adela_option` WHERE ( optionType='AdminCtrol' AND optionKey='admin' AND optionValue='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001946s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002975s ]
+
+[ 2017-07-18T10:44:11+08:00 ] ::1 /easy-city/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003021s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0071s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000730s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005074s ]
+
+[ 2017-07-18T10:44:13+08:00 ] ::1 /easy-city/index.php/Admin/Machine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000406s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0062s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\easy-city\Apps\Admin\Controller\MachineController.class.php 第 39 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_device` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\easy-city\Apps\Admin\Controller\MachineController.class.php 第 58 行.
+SQL: SELECT * FROM `adela_device` ORDER BY deviceId DESC LIMIT 0,5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000772s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004751s ]
+
+[ 2017-07-18T10:44:15+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000555s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004397s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0053s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002026s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003611s ]
+
+[ 2017-07-18T10:44:27+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003499s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0042s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000929s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002599s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003306s ]
+
+[ 2017-07-18T10:44:44+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0051s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000691s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002135s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005217s ]
+
+[ 2017-07-18T10:47:29+08:00 ] ::1 /easy-city/index.php/Admin/Machine/record/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000492s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007071s ]
+SQL: SHOW COLUMNS FROM `adela_consumption` [ RunTime:0.0052s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-18 00:00:00' AND '2017-07-18 23:59:59' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( consTime BETWEEN '2017-07-01' AND '2017-07-31' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `adela_device` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `adela_device` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `adela_consumption` WHERE ( deviceId=37 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `adela_consumption` WHERE ( deviceId=37 ) ORDER BY deviceId DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002023s ]
+NOTIC: [8] Undefined variable: end E:\xampp\htdocs\easy-city\Apps\Runtime\Cache\Admin\a24c1dcbfb67166c0a1719a2da67869b.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005139s ]
+

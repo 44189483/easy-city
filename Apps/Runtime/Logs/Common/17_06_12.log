@@ -1,0 +1,36 @@
+[ 2017-06-12T11:15:39+08:00 ] ::1 /easy-city/Public/admin/images/default/icons_sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000481s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004192s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-12T11:15:57+08:00 ] ::1 /easy-city/Public/admin/images/default/icons_sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002530s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-12T11:35:36+08:00 ] ::1 /easy-city/Public/admin/images/default/icons_sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000473s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003809s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-12T13:10:50+08:00 ] ::1 /easy-city/index.php/Machine/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000591s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004030s ]
+ERR: 无法加载模块:Machine
+
+[ 2017-06-12T13:14:50+08:00 ] ::1 /easy-city/index.php/Machine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000340s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002307s ]
+ERR: 无法加载模块:Machine
+
+[ 2017-06-12T15:57:01+08:00 ] ::1 /easy-city/Public/admin/images/default/icons_sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000494s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003983s ]
+ERR: 无法加载模块:Public
+

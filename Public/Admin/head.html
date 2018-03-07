@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>爱德拉-管理后台</title>
+
+<link rel="stylesheet" href="__PUBLIC__/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="__PUBLIC__/admin/css/font-awesome.min.css" />
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+
+<script src="__PUBLIC__/admin/js/plugins/timepicker/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script src="__PUBLIC__/admin/js/plugins/timepicker/jquery.ui.datepicker-zh-CN.js.js" type="text/javascript" charset="gb2312"></script>
+<script src="__PUBLIC__/admin/js/plugins/timepicker/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/custom/tables.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery.validate.min.js"></script>
+<!--
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery.tagsinput.min.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/charCount.js"></script>
+<!--
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/ui.spinner.min.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/custom/general.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/custom/forms.js"></script>
+
+<!--editor-->
+<link rel="stylesheet" href="__PUBLIC__/admin/js/plugins/editor/themes/default/default.css" />
+<link rel="stylesheet" href="__PUBLIC__/admin/js/plugins/editor/plugins/code/prettify.css" />
+<script charset="utf-8" src="__PUBLIC__/admin/js/plugins/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__PUBLIC__/admin/js/plugins/editor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="__PUBLIC__/admin/js/plugins/editor/plugins/code/prettify.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="__PUBLIC__/admin/css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="__PUBLIC__/admin/css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="__PUBLIC__/admin/js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+
+<body class="withvernav">
+<div class="bodywrapper">
+    <div class="topheader">
+        <div class="left">
+            <h1 class="logo">爱德拉.<span>Admin</span></h1>
+            <span class="slogan">后台管理系统</span>            
+            <br clear="all" />
+        </div><!--left-->
+        <div class="right">
+            <div class="userinfo">
+            	<img src="__PUBLIC__/admin/images/thumbs/avatar.png" alt="" />
+                <span>管理员</span>
+            </div><!--userinfo-->
+            
+            <div class="userinfodrop">
+            	<div class="avatar">
+                	<a href=""><img src="__PUBLIC__/admin/images/thumbs/avatarbig.png" alt="" /></a>
+                </div><!--avatar-->
+                <div class="userdata">
+                	<h4>Admin</h4>
+                    <span class="email">email@yourdomain.com</span>
+                    <ul>
+                    	<!--<li><a href="editprofile.html">编辑资料</a></li>-->
+                        <li><a href="{{:U('Setpwd/index')}}">密码设置</a></li>
+                        <li><a href="{{:U('Index/logout')}}">退出后台</a></li>
+                    </ul>
+                </div><!--userdata-->
+            </div><!--userinfodrop-->
+        </div><!--right-->
+    </div><!--topheader-->
+    
+    <div class="header">
+    	<ul class="headermenu">
+        	<li <eq name="cname" value="Index">class="current"</eq>>
+                <a href="{{:U('Index/index')}}"><i class="fa fa-desktop" style="font-size:30px;"></i><br/>首页</a>
+            </li>
+            <li <eq name="cname" value="Option">class="current"</eq>><a href="{{:U('Option/index')}}"><i class="fa fa-cog" style="font-size:30px;"></i><br/>基本设置</a></li>
+            <li <eq name="cname" value="Machine">class="current"</eq>><a href="{{:U('Machine/index')}}"><i class="fa fa-delicious" style="font-size:30px;"></i><br/>设备管理</a></li>
+            <li <eq name="cname" value="User">class="current"</eq>><a href="{{:U('User/index')}}"><i class="fa fa-users" style="font-size:30px;"></i><br/>用户记录</a></li>
+        </ul>
+        
+       <div class="headerwidget">
+        	<div class="earnings">
+            	<div class="one_half">
+                	<h4>今日收入</h4>
+                    <h2>￥{{$today_amount}}</h2>
+                </div><!--one_half-->
+                <div class="one_half last alignright">
+                	<h4>当月收入</h4>
+                    <h2>￥{{$month_amount}}</h2>
+                </div><!--one_half last-->
+            </div><!--earnings-->
+        </div><!--headerwidget-->
+        
+    </div><!--header-->

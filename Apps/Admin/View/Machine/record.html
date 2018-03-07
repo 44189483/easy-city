@@ -1,0 +1,103 @@
+<include file="Public/Admin/head.html" />
+    
+    <include file="Public/Admin/menu.html" />
+        
+    <div class="centercontent tables">
+    
+        <div id="contentwrapper" class="contentwrapper">
+                
+            <div class="contenttitle2">
+            	<h3>设备:{{$row.deviceNo}}消费流水</h3>
+            </div><!--contenttitle-->
+            
+            <div class="tableoptions">
+                <form method="GET" action="">
+                    <label>
+                        <input id="start" name="start" type="text" placeholder="开始日期" value="{{$start}}"/>
+                        -
+                        <input id="end" name="end" type="text" placeholder="结束日期" value="{{$end}}" />
+                    </label> 
+                    &nbsp;
+                    <button type="submit">查询</button>
+                    &nbsp;
+                    累计消费总和:{{$total}}元
+                </form>
+            </div>
+
+            <!--tableoptions-->	
+
+            <form name="form" id="form" method="POST" action="">
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablecb" id="tab">
+                    <colgroup>
+                        <col class="con0" style="width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" align="center">
+                                <input type="checkbox" class="checkall" />
+                            </th>
+                            <th class="head1">序号</th>
+                            <th class="head0">手机</th>
+                            <th class="head0">金额</th>
+                            <th class="head0">时间</th>
+                            <th class="head1">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <notempty name="rows">
+                        <volist id="i" name="rows" key="k">
+                        <tr>
+                            <td align="center">
+                                <input type="checkbox" name="id[]" value="{{$i.consId}}" />
+                            </td>
+                            <td>
+                                <eq name="p" value="">
+                                {{$k}}
+                                <else/>
+                                {{$length*($p-1)+$k}}
+                                </eq>
+                            </td>
+                            <td>{{$i.userPhone}}</td>
+                            <td>{{$i.amount}}</td>
+                            <td>{{$i.consTime}}</td>
+                            <td class="center">
+                                <a href="__URL__/del/id/{{$i.deviceId}}" onclick="return confirm('确定要删除吗?')">删除</a></td>
+                        </tr>
+                        </volist>
+                    <else/>
+                        <tr><td colspan="6" align="center">暂无信息...</td></tr>
+                    </notempty>
+                    </tbody>
+                </table>
+
+                <div class="dataTables_paginate paging_full_numbers" id="dyntable_paginate">
+                    <button type="button" class="deletebutton">删除选中</button>
+                    {{$page}}
+                </div>
+            </form>
+        
+        </div><!--contentwrapper-->
+        
+	</div><!-- centercontent -->
+    
+    
+</div><!--bodywrapper-->
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#start').datetimepicker({
+            timeFormat: "HH:mm:ss",
+            dateFormat: "yy-mm-dd"
+        });
+        jQuery('#end').datetimepicker({
+            timeFormat: "HH:mm:ss",
+            dateFormat: "yy-mm-dd"
+        });
+    });
+</script>
+</body>
+</html>
